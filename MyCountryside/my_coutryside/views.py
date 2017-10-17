@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-
+import django.contrib.auth
 from django.http import HttpResponse
 from django.shortcuts import render, render_to_response
 from .models import User
@@ -8,7 +8,7 @@ from .models import User
 
 def home(request):
 
-    return render(request, 'home.html', {})
+    return render(request, 'registration/login.html', {})
 
 
 def login(request):
